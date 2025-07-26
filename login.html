@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guest profile-Airbnb</title>
+   <link
+      rel="icon"
+      href="https://tse3.mm.bing.net/th/id/OIP.gYKu9WKsZuoIHu2CZ6J-0AHaEK?pid=Api&P=0&h=180"
+    />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #fff;
+      color: #222;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 24px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 32px;
+      margin-right: 8px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .circle {
+      height: 32px;
+      width: 32px;
+      border-radius: 50%;
+      background-color: #000;
+      color: white;
+      text-align: center;
+      line-height: 32px;
+      font-weight: bold;
+    }
+
+    .dot {
+      height: 6px;
+      width: 6px;
+      background-color: #ff385c;
+      border-radius: 50%;
+      position: relative;
+      top: -10px;
+      right: -10px;
+    }
+
+    main {
+      display: flex;
+      height: calc(100vh - 70px);
+    }
+
+    .sidebar {
+      width: 300px;
+      border-right: 1px solid #eee;
+      padding: 40px 20px;
+    }
+
+    .sidebar-item {
+      display: flex;
+      align-items: center;
+      padding: 12px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      cursor: pointer;
+    }
+    .sidebar-item:hover{
+      cursor:pointer;
+      background-color: #f1f1f1;
+    }
+
+    .sidebar-item img, .sidebar-item .circle {
+      margin-right: 10px;
+    }
+
+    .content {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .content-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .profile-card {
+      background: white;
+      border-radius: 24px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.1);
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      max-width: 500px;
+      margin-top: 20px;
+    }
+
+    .profile-initial {
+      background-color: black;
+      color: white;
+      border-radius: 50%;
+      height: 80px;
+      width: 80px;
+      text-align: center;
+      line-height: 80px;
+      font-size: 36px;
+      font-weight: bold;
+      margin-right: 24px;
+    }
+
+    .profile-details {
+      font-size: 18px;
+    }
+
+    .profile-details span {
+      display: block;
+      font-size: 14px;
+      color: gray;
+    }
+
+    .get-started {
+      background-color: #ff385c;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 12px;
+      font-weight: bold;
+      margin-top: 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .right-panel {
+      margin-top: 40px;
+      max-width: 400px;
+    }
+
+    .reviews {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+      font-size: 16px;
+    }
+
+    .reviews img {
+      margin-right: 10px;
+    }
+
+    button.edit {
+      background-color: #eee;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://seeklogo.com/images/A/airbnb-logo-1D03C48906-seeklogo.com.png" alt="Airbnb Logo"/>
+    </div>
+    <div class="nav">
+      <span>Become a host</span>
+      <div class="circle">M</div>
+      <div class="circle" style="background:#f1f1f1; color:#333;">≡</div>
+      <div class="dot"></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="sidebar">
+      <div class="sidebar-item active">
+        <div class="circle">M</div>
+        <span>About me</span>
+      </div>
+      <div class="sidebar-item">
+        <img src="https://img.icons8.com/ios-filled/50/briefcase.png" width="24" />
+        <span>Past trips</span>
+      </div>
+      <div class="sidebar-item">
+        <img src="https://img.icons8.com/ios-filled/50/conference-call.png" width="24" />
+        <span>Connections</span>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="content-header">
+        <h2>About me</h2>
+        <button class="edit">Edit</button>
+      </div>
+
+      <div class="profile-card">
+        <div class="profile-initial">M</div>
+        <div class="profile-details">
+          <strong>Maruti Saisurya</strong>
+          <span>Guest</span>
+        </div>
+      </div>
+
+      <div class="right-panel">
+        <h3 style="margin-top: 40px;">Complete your profile</h3>
+        <p style="margin-top: 10px; color: #555;">
+          Your Airbnb profile is an important part of every reservation. Create yours to help other hosts and guests get to know you.
+        </p>
+        <a href="https://www.airbnb.co.in/users/profile?editMode=true"><button class="get-started">Get started</button></a>
+      </div>
+
+      <div class="reviews">
+        <img src="https://img.icons8.com/material-outlined/24/speech-bubble--v1.png"/>
+        <span>Reviews I’ve written</span>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

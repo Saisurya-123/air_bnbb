@@ -1,0 +1,202 @@
+* {
+   margin: 1%;
+}
+
+span h2 {
+   display: flex;
+   margin-top: 0%;
+   margin-left: 2.7%;
+   font-family: sans-serif;
+   color: #4d4c4c;
+   cursor: pointer;
+}
+
+.sec1 {
+   display: flex;
+   flex-direction: row;
+   margin-top: -10px;
+   margin-left: 1.5%;
+   column-gap: -3px; 
+  margin-right: 20%;
+
+}
+
+.ic1 img {
+   display: flex;
+   cursor: pointer;
+   border-radius: 20px;
+   aspect-ratio: 4.2/4;
+   width: 17.5vw;
+   height: 16.5vw;   
+
+}
+
+.ic1 h6 {
+   cursor: pointer;
+   margin-top: 15px;
+   margin-left: 1%;
+   font-size: 15px;
+   color: #3d3d3d;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.d1 {
+   padding: 2px;
+   color: gray;
+   margin-left: -2%;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 13px;
+   margin-top: -0.9%;
+   margin-left: -1%;
+}
+
+.sec2 {
+   display: flex;
+   flex-direction: row;
+   margin-top: -10px;
+   margin-left: 1.5%;
+    margin-right: 20%; 
+}
+
+.material-icons {
+   cursor: pointer;
+   position: absolute;   
+   color: #3d3d3d;
+   margin-left: 170px;
+   margin-top: 10px;
+   border-radius:2px solid white;
+   
+}
+
+.material-icons:hover {
+   opacity: 0.8;
+}
+   
+.fbtn {
+   position: absolute;
+   cursor: pointer;
+   color: black;
+   background-color: #d1cdd4;
+   margin-left: 10px;
+   margin-top: 10px;
+   border-radius: 20px;
+   border: none;
+   padding:10px 20px 10px 20px;
+
+}
+.sec3 {
+   display: flex;
+   flex-direction: row;
+   margin-top: -10px;
+   margin-left: 1.5%;
+   /* margin-right: 20%; */
+}
+.sec4 {
+   display: flex;
+   flex-direction: row;
+   margin-top: -10px;
+   margin-left: 1.5%;
+   margin-right:20%;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  padding: 40px;
+  background-color: #f9f9f9;
+  color: #222;
+  font-size: 14px;
+}
+
+.footer-top h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 20px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.tabs span {
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.tabs .active {
+  font-weight: bold;
+  border-bottom: 2px solid #000;
+}
+
+.categories {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.categories div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.footer-links div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.categories2 {
+  margin-left: 30%;
+  font-size: bold;
+}
+
+.categories3 {
+  margin-left: 30%;
+  font-size: bold;
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  font-size: 13px;
+  color: #555;
+}
+
+.footer-bottom .left,
+.footer-bottom .right {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
